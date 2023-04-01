@@ -11,6 +11,7 @@ interface ContextProps {
   addNewMoto: (moto: Motorcycles) => void;
   changeAmount: (id: string, amount: number) => void;
   payment: () => void;
+  removeMoto: (id: string) => void;
   //   updateEntry: (entry: Entry, showSnackbar?: boolean) => void;
   //   deleteEntry: (entry: Entry, showSnackbar?: boolean) => void;
 }

@@ -4,6 +4,7 @@ import { ShoppingMotorcycles } from "../interfaces/InterfaceMotorciley";
 import { shadowStyles } from "../theme/shadow";
 import { appColors } from "../constants/colors";
 import { useMotosContex } from "../hooks/useMotosContex";
+import Ionicons from "@expo/vector-icons/Ionicons";
 
 interface Props {
   moto: ShoppingMotorcycles;
@@ -26,6 +27,7 @@ export const PaymentItem: FC<Props> = ({ moto }) => {
   const hancleChangeAmount = (id: string, amount: number) => {
     changeAmount(id, amount);
   };
+
   return (
     <View style={styles.container}>
       <View style={{ marginHorizontal: 30 }}>
@@ -68,23 +70,20 @@ export const PaymentItem: FC<Props> = ({ moto }) => {
                 onPress={() => handleChangeAmount(-1)}
                 style={{ flex: 1 }}
               >
-                <Text style={{ fontSize: 20, textAlign: "center" }}>{"<"}</Text>
+                <Ionicons name="arrow-back-outline" size={20} color={"#000"} />
               </TouchableOpacity>
               <Text style={{ fontSize: 10, marginHorizontal: 10 }}>
                 {amount}
               </Text>
               <TouchableOpacity
                 onPress={() => handleChangeAmount(1)}
-                style={{ flex: 1 }}
+                style={{ flex: 1, alignItems: "center" }}
               >
-                <Text
-                  style={{
-                    fontSize: 20,
-                    textAlign: "center",
-                  }}
-                >
-                  {">"}
-                </Text>
+                <Ionicons
+                  name="arrow-forward-outline"
+                  size={20}
+                  color={"#000"}
+                />
               </TouchableOpacity>
             </View>
           </View>

@@ -3,8 +3,12 @@ import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { Navigator } from "./src/navigator/Navigator";
 import { MotosProvider } from "./src/context/MotosProvider";
+import { LogBox } from "react-native";
 
 export default function App() {
+  LogBox.ignoreLogs([
+    "Sending `onAnimatedValueUpdate` with no listeners registered.",
+  ]);
   return (
     <NavigationContainer>
       <MotosProvider>

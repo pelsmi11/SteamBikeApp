@@ -9,7 +9,8 @@ export interface ChangeMaounter {
 type MotoActionType =
   | { type: "[Moto] Add-Moto"; payload: ShoppingMotorcycles }
   | { type: "[Moto] change-Amount"; payload: ChangeMaounter }
-  | { type: "[Moto] Payment" };
+  | { type: "[Moto] Payment" }
+  | { type: "[Moto] Removed-Moto"; payload: string };
 
 export const motosReducer = (
   state: MotoState,
@@ -43,6 +44,14 @@ export const motosReducer = (
       return {
         ...state,
         shoppingMotos: [],
+      };
+    case "[Moto] Removed-Moto":
+      const removeMoto = state.shoppingMotos.filter(
+        (moto) => moto.id !== action.payload
+      );
+      return {
+        ...state,
+        shoppingMotos: removeMoto,
       };
     default:
       return state;

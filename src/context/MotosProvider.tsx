@@ -44,6 +44,10 @@ export const MotosProvider: FC<Props> = ({ children }) => {
     }
   };
 
+  const removeMoto = (id: string) => {
+    dispatch({ type: "[Moto] Removed-Moto", payload: id });
+  };
+
   return (
     <MotosContext.Provider
       value={{
@@ -53,6 +57,7 @@ export const MotosProvider: FC<Props> = ({ children }) => {
         addNewMoto,
         changeAmount,
         payment,
+        removeMoto,
       }}
     >
       {children}
