@@ -1,0 +1,68 @@
+import { Motorcycles } from "../interfaces/InterfaceMotorciley";
+
+export const motorcycles: Motorcycles[] = [
+  {
+    id: "610a8e58d417c25be2c2174b",
+    name: "SteamBike Nemesis",
+    img: "/motos/Fotos3_r4_c3.png",
+    edition: "Edition 2024",
+    image: require("../assets/motos/Fotos3_r4_c3.png"),
+    price: 175,
+  },
+  {
+    id: "610a8e58d417c25be2c21745",
+    name: "SteamBike Thunderbolt",
+    img: "/motos/Fotos3_r1_c1.png",
+    edition: "Edition 2021",
+    image: require("../assets/motos/Fotos3_r1_c1.png"),
+    price: 150,
+  },
+  {
+    id: "610a8e58d417c25be2c21746",
+    name: "SteamBike Aurora",
+    img: "/motos/Fotos1_r4_c3.png",
+    edition: "Edition 2020",
+    image: require("../assets/motos/Fotos1_r4_c3.png"),
+    price: 188,
+  },
+  {
+    id: "610a8e58d417c25be2c21747",
+    name: "SteamBike Inferno",
+    img: "/motos/Fotos2_r1_c1.png",
+    edition: "Edition 2020",
+    image: require("../assets/motos/Fotos2_r1_c1.png"),
+    price: 193,
+  },
+  {
+    id: "610a8e58d417c25be2c21748",
+    name: "SteamBike Cyclone",
+    img: "/motos/Fotos1_r1_c3.png",
+    edition: "Edition 2022",
+    image: require("../assets/motos/Fotos1_r1_c3.png"),
+    price: 140,
+  },
+  {
+    id: "610a8e58d417c25be2c21749",
+    name: "SteamBike Tempest",
+    img: "/motos/Fotos1_r3_c1.png",
+    edition: "Edition 2023",
+    image: require("../assets/motos/Fotos1_r3_c1.png"),
+    price: 145,
+  },
+  {
+    id: "610a8e58d417c25be2c2174a",
+    name: "SteamBike Cyclotron",
+    img: "/motos/Fotos2_r1_c3.png",
+    edition: "Edition 2024",
+    image: require("../assets/motos/Fotos2_r1_c3.png"),
+    price: 175,
+  },
+  {
+    id: "610a8e58d417c25be2c2174c",
+    name: "SteamBike Vortex",
+    img: "/motos/Fotos3_r1_c4.png",
+    edition: "Edition 2022",
+    image: require("../assets/motos/Fotos3_r1_c4.png"),
+    price: 175,
+  },
+];
